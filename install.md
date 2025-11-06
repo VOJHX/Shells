@@ -61,3 +61,20 @@ echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 
 sudo apt update
 sudo apt install nginx
 ```
+
+## NextTrace
+Direct install:
+```
+curl -sL nxtrace.org/nt |bash
+```
+
+APT install:
+```
+curl -fsSL https://github.com/nxtrace/nexttrace-debs/releases/latest/download/nexttrace-archive-keyring.gpg | sudo tee /etc/apt/keyrings/nexttrace.gpg >/dev/null
+echo "Types: deb
+URIs: https://github.com/nxtrace/nexttrace-debs/releases/latest/download/
+Suites: ./
+Signed-By: /etc/apt/keyrings/nexttrace.gpg" | sudo tee /etc/apt/sources.list.d/nexttrace.sources >/dev/null
+sudo apt update
+sudo apt install nexttrace
+```
