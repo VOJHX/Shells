@@ -4,7 +4,7 @@ cd ~
 mkdir warp
 cd warp
 
-wget https://github.com/VOJHX/Shells/raw/refs/heads/main/WARP/update-wgcf.sh
+wget https://raw.githubusercontent.com/VOJHX/Shells/refs/heads/main/WARP/update-wgcf.sh
 wget https://raw.githubusercontent.com/VOJHX/Shells/refs/heads/main/WARP/init-warp.sh
 ```
 
