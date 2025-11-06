@@ -73,6 +73,11 @@ sudo mkdir -p /etc/wireguard
 sudo cp "$WGCF_PROFILE" "$WG_CONF"
 sudo chmod 600 "$WG_CONF"
 
+# 自动注释掉配置文件中的 DNS 行，以防止 wg-quick 调用 resolvconf 失败。
+# 这样脚本就能在不安装 resolvconf 的情况下正常工作，并使用系统现有的 DNS 设置。
+echo "==> 禁用 WireGuard 配置中的 DNS 管理功能以增强兼容性..."
+sudo sed -i 's/^DNS =.*/#&/' "$WG_CONF"
+
 #=== 完成提示 ===#
 echo
 echo "✅ WARP 配置已完成：$WG_CONF"
