@@ -6,6 +6,7 @@ cd warp
 
 wget https://raw.githubusercontent.com/VOJHX/Shells/refs/heads/main/WARP/update-wgcf.sh
 wget https://raw.githubusercontent.com/VOJHX/Shells/refs/heads/main/WARP/init-warp.sh
+wget https://raw.githubusercontent.com/VOJHX/Shells/refs/heads/main/WARP/toggle-warp-mode.sh
 ```
 
 ## 使用
@@ -15,6 +16,9 @@ bash update-wgcf.sh
 
 # 初始化 WG 环境，并尝试部署 WARP
 bash init-warp.sh
+
+# 默认是全局代理，使用脚本切换代理模式
+bash toggle-warp-mode.sh
 
 # 启动 WARP
 sudo wg-quick up WARP
