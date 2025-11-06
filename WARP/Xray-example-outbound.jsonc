@@ -1,0 +1,17 @@
+{
+  "outbounds": [
+    {
+      "tag": "WARP",
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIPv4v6" # IPv4 优先
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "interface": "WARP" # 流量从 WARP 网口走
+        }
+      }
+    }
+  ]
+}
