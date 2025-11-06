@@ -78,3 +78,9 @@ Signed-By: /etc/apt/keyrings/nexttrace.gpg" | sudo tee /etc/apt/sources.list.d/n
 sudo apt update
 sudo apt install nexttrace
 ```
+
+## Server Status Rust
+```
+wget --no-check-certificate -qO status.sh 'https://raw.githubusercontent.com/zdz/ServerStatus-Rust/master/scripts/status.sh'
+bash status.sh -i -c
+```
