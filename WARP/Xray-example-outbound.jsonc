@@ -4,7 +4,7 @@
       "tag": "WARP",
       "protocol": "freedom",
       "settings": {
-        "domainStrategy": "UseIPv4v6" # IPv4 优先
+        "domainStrategy": "UseIPv4v6" # 这里是 优先使用 IPv4 地址进行连接，你也可以对此进行修改。
       },
       "streamSettings": {
         "network": "raw",
