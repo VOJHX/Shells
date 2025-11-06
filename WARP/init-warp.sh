@@ -16,7 +16,7 @@ check_wireguard() {
   else
     echo "⚙️  未检测到 WireGuard，正在自动安装..."
     sudo apt update -qq
-    sudo apt install -y wireguard resolvconf > /dev/null
+    sudo apt install -y wireguard > /dev/null
     echo "✅ WireGuard 安装完成。"
   fi
 
