@@ -25,3 +25,10 @@ sudo systemctl enable wg-quick@WARP
 # 测试
 curl --interface WARP https://www.cloudflare.com/cdn-cgi/trace/
 ```
+
+## Xray
+在你的 Xray 配置中添加下面的出站配置：
+
+[Xray-example-outbound.jsonc](./Xray-example-outbound.jsonc)
+
+并配置路由
